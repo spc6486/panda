@@ -40,6 +40,9 @@ elif os.getenv("GATEWAY"):
     "-Os",
     "-g",
     "-DGATEWAY",
+    "-ffunction-sections",
+    "-fdata-sections",
+    "-Wl,--gc-sections",
   ]
 
 else:
